@@ -1,164 +1,508 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Shop professional cameras, lenses, and photography accessories at Aperture Camera Co."
+  >
+
   <title>Aperture Camera Co.</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div class="announcement">
-    Free shipping on orders over $150
+    <div class="announcement-track">
+      <span>Free shipping on orders over $150</span>
+      <span>30-day returns</span>
+      <span>Authorized camera dealer</span>
+      <span>Free shipping on orders over $150</span>
+    </div>
   </div>
 
   <header class="site-header">
-    <div class="logo">Aperture</div>
 
-    <nav class="main-nav">
+    <a href="#" class="logo" aria-label="Aperture homepage">
+      <span class="logo-mark"></span>
+
+      <span class="logo-text">
+        Aperture
+        <small>Camera Co.</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+
       <div class="nav-item shop-item">
-        Shop
+
+        <a href="#" class="nav-link">
+          Shop
+          <span class="nav-arrow">⌄</span>
+        </a>
+
         <div class="mega-menu">
-          <div>
+
+          <div class="menu-column">
+            <span class="menu-icon">◉</span>
             <h4>Cameras</h4>
             <a href="#">Mirrorless</a>
             <a href="#">DSLR</a>
             <a href="#">Cinema Cameras</a>
             <a href="#">Compact Cameras</a>
+            <a href="#" class="view-all">View all →</a>
           </div>
-          <div>
+
+          <div class="menu-column">
+            <span class="menu-icon">◎</span>
             <h4>Lenses</h4>
-            <a href="#">Sony</a>
-            <a href="#">Canon</a>
-            <a href="#">Nikon</a>
-            <a href="#">Sigma</a>
+            <a href="#">Prime Lenses</a>
+            <a href="#">Zoom Lenses</a>
+            <a href="#">Cinema Lenses</a>
+            <a href="#">Lens Accessories</a>
+            <a href="#" class="view-all">View all →</a>
           </div>
-          <div>
+
+          <div class="menu-column">
+            <span class="menu-icon">◇</span>
             <h4>Accessories</h4>
             <a href="#">Tripods</a>
             <a href="#">Lighting</a>
             <a href="#">Camera Bags</a>
             <a href="#">Memory Cards</a>
+            <a href="#" class="view-all">View all →</a>
           </div>
-          <div>
+
+          <div class="menu-column">
+            <span class="menu-icon">✦</span>
             <h4>Brands</h4>
-            <a href="#">Fujifilm</a>
-            <a href="#">Leica</a>
             <a href="#">Sony</a>
             <a href="#">Canon</a>
+            <a href="#">Fujifilm</a>
+            <a href="#">Leica</a>
+            <a href="#" class="view-all">View all →</a>
           </div>
+
+          <a href="#" class="menu-feature">
+            <img
+              src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=700&q=85"
+              alt="New professional camera"
+            >
+
+            <span class="menu-feature-overlay">
+              <small>New arrivals</small>
+              <strong>Explore the latest gear</strong>
+              <span>Shop now →</span>
+            </span>
+          </a>
+
         </div>
       </div>
 
-      <a href="#">Brands</a>
-      <a href="#">Deals</a>
-      <a href="#">Learn</a>
+      <a href="#" class="nav-link">Brands</a>
+      <a href="#" class="nav-link">Deals</a>
+      <a href="#" class="nav-link">Learn</a>
+
     </nav>
 
     <div class="header-actions">
-      <a href="#">Search</a>
-      <a href="#">Account</a>
-      <a href="#">Cart</a>
+      <button class="icon-button" aria-label="Search">⌕</button>
+      <button class="icon-button" aria-label="Account">♙</button>
+
+      <button class="icon-button cart-button" aria-label="Cart">
+        ◇
+        <span class="cart-count">2</span>
+      </button>
     </div>
+
   </header>
 
   <main>
 
     <section class="hero">
+
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
       <div class="hero-content">
+
         <p class="eyebrow">Professional gear for every creator</p>
-        <h1>Capture Every Moment.</h1>
-        <p>
-          Discover cameras, lenses, and accessories designed for photographers,
-          filmmakers, and visual storytellers.
+
+        <h1>
+          Capture every
+          <span>moment.</span>
+        </h1>
+
+        <p class="hero-description">
+          Discover professional cameras, lenses, and accessories
+          designed for photographers, filmmakers, and visual storytellers.
         </p>
-        <a href="#" class="button">Shop Cameras</a>
+
+        <div class="hero-buttons">
+          <a href="#" class="button primary-button">
+            Shop Cameras
+            <span>→</span>
+          </a>
+
+          <a href="#" class="button secondary-button">
+            Explore Lenses
+            <span>↗</span>
+          </a>
+        </div>
+
       </div>
+
+      <div class="hero-pagination" aria-hidden="true">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </section>
+
+    <section class="benefits">
+
+      <article>
+        <span class="benefit-icon">✓</span>
+        <div>
+          <strong>Authorized Dealer</strong>
+          <p>100% genuine products</p>
+        </div>
+      </article>
+
+      <article>
+        <span class="benefit-icon">◎</span>
+        <div>
+          <strong>Expert Support</strong>
+          <p>Advice from real creators</p>
+        </div>
+      </article>
+
+      <article>
+        <span class="benefit-icon">▱</span>
+        <div>
+          <strong>Fast Shipping</strong>
+          <p>Get your gear quickly</p>
+        </div>
+      </article>
+
+      <article>
+        <span class="benefit-icon">↻</span>
+        <div>
+          <strong>30-Day Returns</strong>
+          <p>Shop with confidence</p>
+        </div>
+      </article>
+
     </section>
 
     <section class="categories section-padding">
-      <div class="section-heading">
-        <p class="eyebrow">Shop by category</p>
-        <h2>Find your perfect setup</h2>
+
+      <div class="section-heading-row">
+
+        <div class="section-heading">
+          <p class="eyebrow">Shop by category</p>
+          <h2>Find your perfect setup</h2>
+        </div>
+
+        <a href="#" class="text-link">
+          View all categories
+          <span>→</span>
+        </a>
+
       </div>
 
       <div class="category-grid">
-        <article class="category-card">
-          <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80" alt="Mirrorless camera">
-          <div>
+
+        <article class="category-card category-purple">
+
+          <div class="category-image">
+            <img
+              src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=85"
+              alt="Mirrorless camera"
+            >
+
+            <span class="category-number">01</span>
+          </div>
+
+          <div class="category-content">
+            <div class="category-icon">◉</div>
+
             <h3>Mirrorless Cameras</h3>
-            <p>Compact systems with professional image quality.</p>
-            <a href="#">Shop now →</a>
+
+            <p>
+              Compact systems with professional image quality and
+              advanced creative control.
+            </p>
+
+            <a href="#">Shop cameras <span>→</span></a>
           </div>
+
         </article>
 
-        <article class="category-card">
-          <img src="https://images.unsplash.com/photo-1617005082133-548c4dd27f35?auto=format&fit=crop&w=800&q=80" alt="Camera lens">
-          <div>
+        <article class="category-card category-orange">
+
+          <div class="category-image">
+            <img
+              src="https://images.unsplash.com/photo-1617005082133-548c4dd27f35?auto=format&fit=crop&w=900&q=85"
+              alt="Professional camera lens"
+            >
+
+            <span class="category-number">02</span>
+          </div>
+
+          <div class="category-content">
+            <div class="category-icon">◎</div>
+
             <h3>Lenses</h3>
-            <p>Prime, zoom, and cinema lenses for every shot.</p>
-            <a href="#">Shop now →</a>
+
+            <p>
+              Prime, zoom, and cinema lenses designed for every
+              perspective and production.
+            </p>
+
+            <a href="#">Shop lenses <span>→</span></a>
           </div>
+
         </article>
 
-        <article class="category-card">
-          <img src="https://images.unsplash.com/photo-1495707902641-75cac588d2e9?auto=format&fit=crop&w=800&q=80" alt="Camera accessories">
-          <div>
-            <h3>Accessories</h3>
-            <p>Lighting, bags, tripods, storage, and more.</p>
-            <a href="#">Shop now →</a>
+        <article class="category-card category-green">
+
+          <div class="category-image">
+            <img
+              src="https://images.unsplash.com/photo-1495707902641-75cac588d2e9?auto=format&fit=crop&w=900&q=85"
+              alt="Camera accessories"
+            >
+
+            <span class="category-number">03</span>
           </div>
+
+          <div class="category-content">
+            <div class="category-icon">◇</div>
+
+            <h3>Accessories</h3>
+
+            <p>
+              Lighting, tripods, camera bags, storage, and tools for
+              your complete setup.
+            </p>
+
+            <a href="#">Shop accessories <span>→</span></a>
+          </div>
+
         </article>
+
       </div>
+
     </section>
 
     <section class="products section-padding">
-      <div class="section-heading">
-        <p class="eyebrow">Featured products</p>
-        <h2>Creator favorites</h2>
+
+      <div class="section-heading-row">
+
+        <div class="section-heading">
+          <p class="eyebrow">Featured products</p>
+          <h2>Creator favorites</h2>
+        </div>
+
+        <a href="#" class="text-link">
+          View all products
+          <span>→</span>
+        </a>
+
       </div>
 
       <div class="product-grid">
+
         <article class="product-card">
-          <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=800&q=80" alt="Camera">
-          <h3>Sony A7 IV</h3>
-          <p class="rating">★★★★★</p>
-          <p class="price">$2,499</p>
-          <button>Add to Cart</button>
+
+          <button class="favorite-button" aria-label="Add Sony A7 IV to favorites">
+            ♡
+          </button>
+
+          <div class="product-image">
+            <span class="product-badge">Best seller</span>
+
+            <img
+              src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=800&q=85"
+              alt="Sony A7 IV camera"
+            >
+          </div>
+
+          <div class="product-content">
+            <p class="product-brand">Sony</p>
+            <h3>Sony A7 IV</h3>
+
+            <div class="rating">
+              <span>★★★★★</span>
+              <small>(128)</small>
+            </div>
+
+            <div class="product-footer">
+              <p class="price">$2,499</p>
+              <span class="stock">In stock</span>
+            </div>
+
+            <button class="add-button">
+              Add to Cart
+              <span>＋</span>
+            </button>
+          </div>
+
         </article>
 
         <article class="product-card">
-          <img src="https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?auto=format&fit=crop&w=800&q=80" alt="Camera">
-          <h3>Canon EOS R6</h3>
-          <p class="rating">★★★★☆</p>
-          <p class="price">$1,999</p>
-          <button>Add to Cart</button>
+
+          <button class="favorite-button" aria-label="Add Canon EOS R6 to favorites">
+            ♡
+          </button>
+
+          <div class="product-image">
+            <span class="product-badge new-badge">New</span>
+
+            <img
+              src="https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?auto=format&fit=crop&w=800&q=85"
+              alt="Canon EOS R6 camera"
+            >
+          </div>
+
+          <div class="product-content">
+            <p class="product-brand">Canon</p>
+            <h3>Canon EOS R6</h3>
+
+            <div class="rating">
+              <span>★★★★★</span>
+              <small>(94)</small>
+            </div>
+
+            <div class="product-footer">
+              <p class="price">$1,999</p>
+              <span class="stock">In stock</span>
+            </div>
+
+            <button class="add-button">
+              Add to Cart
+              <span>＋</span>
+            </button>
+          </div>
+
         </article>
 
         <article class="product-card">
-          <img src="https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&w=800&q=80" alt="Camera lens">
-          <h3>Sigma 35mm Lens</h3>
-          <p class="rating">★★★★★</p>
-          <p class="price">$899</p>
-          <button>Add to Cart</button>
+
+          <button class="favorite-button" aria-label="Add Sigma lens to favorites">
+            ♡
+          </button>
+
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&w=800&q=85"
+              alt="Sigma 35mm camera lens"
+            >
+          </div>
+
+          <div class="product-content">
+            <p class="product-brand">Sigma</p>
+            <h3>Sigma 35mm f/1.4 Lens</h3>
+
+            <div class="rating">
+              <span>★★★★★</span>
+              <small>(67)</small>
+            </div>
+
+            <div class="product-footer">
+              <p class="price">$899</p>
+              <span class="stock">In stock</span>
+            </div>
+
+            <button class="add-button">
+              Add to Cart
+              <span>＋</span>
+            </button>
+          </div>
+
         </article>
 
         <article class="product-card">
-          <img src="https://images.unsplash.com/photo-1589872307379-0ffdf9829123?auto=format&fit=crop&w=800&q=80" alt="Camera bag">
-          <h3>Field Camera Bag</h3>
-          <p class="rating">★★★★☆</p>
-          <p class="price">$149</p>
-          <button>Add to Cart</button>
+
+          <button class="favorite-button" aria-label="Add camera bag to favorites">
+            ♡
+          </button>
+
+          <div class="product-image">
+            <span class="product-badge sale-badge">Save 15%</span>
+
+            <img
+              src="https://images.unsplash.com/photo-1589872307379-0ffdf9829123?auto=format&fit=crop&w=800&q=85"
+              alt="Professional field camera bag"
+            >
+          </div>
+
+          <div class="product-content">
+            <p class="product-brand">Aperture</p>
+            <h3>Field Camera Bag</h3>
+
+            <div class="rating">
+              <span>★★★★☆</span>
+              <small>(52)</small>
+            </div>
+
+            <div class="product-footer">
+              <p class="price">$149</p>
+              <span class="stock">In stock</span>
+            </div>
+
+            <button class="add-button">
+              Add to Cart
+              <span>＋</span>
+            </button>
+          </div>
+
         </article>
+
       </div>
+
     </section>
 
-    <section class="seo-section section-padding">
-      <div class="seo-image"></div>
+    <section class="seo-section">
+
+      <div class="seo-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1495121553079-4c61bcce1894?auto=format&fit=crop&w=1100&q=85"
+          alt="Vintage professional camera"
+        >
+
+        <div class="image-tag">
+          <strong>Curated gear</strong>
+          <span>Chosen by creators</span>
+        </div>
+
+      </div>
+
       <div class="seo-copy">
+
         <p class="eyebrow">Why shop with us</p>
+
         <h2>Camera gear selected for serious creators</h2>
+
         <p>
           Aperture Camera Co. helps photographers and filmmakers build reliable,
           professional camera systems with confidence. From entry-level mirrorless
@@ -175,33 +519,111 @@
           guidance, and a creator-first approach, Aperture Camera Co. is built to
           support your next shoot from planning to final image.
         </p>
+
+        <div class="seo-features">
+
+          <span>
+            <b>✓</b>
+            Top brands
+          </span>
+
+          <span>
+            <b>✓</b>
+            Expert advice
+          </span>
+
+          <span>
+            <b>✓</b>
+            Fast shipping
+          </span>
+
+          <span>
+            <b>✓</b>
+            Flexible financing
+          </span>
+
+        </div>
+
       </div>
+
     </section>
 
     <section class="promo-banner">
-      <div>
+
+      <div class="promo-orb promo-orb-one"></div>
+      <div class="promo-orb promo-orb-two"></div>
+
+      <div class="promo-content">
         <p class="eyebrow">Limited time</p>
         <h2>Summer Creator Sale</h2>
         <p>Save up to 20% on select lenses and accessories.</p>
       </div>
-      <a href="#" class="button light">Shop Deals</a>
+
+      <a href="#" class="button promo-button">
+        Shop Deals
+        <span>→</span>
+      </a>
+
     </section>
 
-    <section class="newsletter section-padding">
+    <section class="newsletter">
+
+      <div class="newsletter-icon">✉</div>
+
+      <p class="eyebrow">The Aperture Edit</p>
+
       <h2>Stay behind the lens</h2>
-      <p>Get photography tips, product releases, and exclusive promotions.</p>
+
+      <p>
+        Get photography tips, product releases, and exclusive promotions
+        delivered to your inbox.
+      </p>
+
       <form>
-        <input type="email" placeholder="Email address">
-        <button type="submit">Subscribe</button>
+        <label class="sr-only" for="email">Email address</label>
+
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your email address"
+          required
+        >
+
+        <button type="submit">
+          Subscribe
+          <span>→</span>
+        </button>
       </form>
+
     </section>
 
   </main>
 
   <footer class="footer">
-    <div>
-      <h3>Aperture</h3>
-      <p>Camera gear for photographers, filmmakers, and visual storytellers.</p>
+
+    <div class="footer-brand">
+
+      <a href="#" class="logo footer-logo">
+        <span class="logo-mark"></span>
+
+        <span class="logo-text">
+          Aperture
+          <small>Camera Co.</small>
+        </span>
+      </a>
+
+      <p>
+        Camera gear for photographers, filmmakers,
+        and visual storytellers.
+      </p>
+
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="YouTube">YT</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Pinterest">PT</a>
+      </div>
+
     </div>
 
     <div>
@@ -221,12 +643,35 @@
     </div>
 
     <div>
-      <h4>Social</h4>
-      <a href="#">Instagram</a>
-      <a href="#">YouTube</a>
-      <a href="#">Facebook</a>
-      <a href="#">Pinterest</a>
+      <h4>Company</h4>
+      <a href="#">About Us</a>
+      <a href="#">Careers</a>
+      <a href="#">Journal</a>
+      <a href="#">Affiliates</a>
     </div>
+
+    <div>
+      <h4>We Accept</h4>
+
+      <div class="payment-icons">
+        <span>VISA</span>
+        <span>MC</span>
+        <span>AMEX</span>
+      </div>
+
+      <p class="secure-text">Secure encrypted checkout</p>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Aperture Camera Co. All rights reserved.</p>
+
+      <div>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+
   </footer>
 
 </body>
